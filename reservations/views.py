@@ -6,5 +6,5 @@ from rest_framework.views import APIView
 class HotelListView(APIView):
 	def get(self, resquest):
 		resp = {"message": "The list of endpoints are shown here"}
-		return Response(resp, 200)
+		return Response(resp, status=200)
 

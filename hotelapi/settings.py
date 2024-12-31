@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    "rest_framework",
     'reservations'
 ]
 
@@ -97,7 +98,7 @@ DATABASES = {
         
 #     }
 # }
-if DEBUG:
+if not DEBUG:
     DATABASES = {
     'default': dj_database_url.config(default="postgresql://postgres:RjkCxlmObeCEgeXZrsKDmEjFxgWTgwpD@autorack.proxy.rlwy.net:22971/railway")
 
